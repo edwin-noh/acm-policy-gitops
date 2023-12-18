@@ -53,7 +53,7 @@ spec:
                   name: rhsso-operator
                   namespace: keycloak
                 spec:
-                  channel: alpha
+                  channel: stable
                   installPlanApproval: Automatic
                   name: rhsso-operator
                   source: redhat-operators
@@ -113,6 +113,7 @@ spec:
                     enabled: true
                   # external:
                   #   enabled: true
+                  # unmanaged: true
                   instances: 1
 ---
 apiVersion: policy.open-cluster-management.io/v1
