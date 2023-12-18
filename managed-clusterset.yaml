@@ -1,0 +1,22 @@
+## 현재버전에서는 global또는 default를 사용
+# apiVersion: cluster.open-cluster-management.io/v1beta2
+# kind: ManagedClusterSet
+# metadata:
+#   annotations:
+#     open-cluster-management.io/ns-create: "true"
+#   name: global
+# spec:
+#   clusterSelector:
+#     labelSelector: {}
+#     selectorType: LabelSelector
+
+apiVersion: cluster.open-cluster-management.io/v1beta2
+kind: ManagedClusterSet
+metadata:
+  name: all-openshift-clusters
+spec:
+  clusterSelector:
+    labelSelector: 
+      matchLabels:
+        vendor: OpenShift
+    selectorType: LabelSelector
