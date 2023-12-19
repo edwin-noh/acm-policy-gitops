@@ -27,12 +27,12 @@ apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
   name: binding-policy-certificate
-  namespace: global-policies
+  namespace: global-policies     
 placementRef:
   name: placement-policy-all
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
-- name: policy-certificate
+- name: policy-certificate    
   kind: Policy
   apiGroup: policy.open-cluster-management.io
