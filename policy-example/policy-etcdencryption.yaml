@@ -35,7 +35,7 @@ spec:
           name: enable-etcd-encryption-status-kubeapi
         spec:
           remediationAction: inform
-          severity: low
+          severity: medium
           object-templates:
             - complianceType: musthave
               objectDefinition:
